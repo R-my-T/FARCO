@@ -55,7 +55,7 @@ python Main.py
 
 _Note: Kindly use **only anaconda prompt to activate this virtual environtment** to avoid any unexpected errors. If there are any errors such as a package missing etc., use pip install package-name to fix it. If you wish to use a different virtual environment kindly make sure all the above mentioned requirements are installed in it._
 ## Tech stack used
-<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png)]" />
+<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
 
 ## Features
 -  Extremely flexible and versatile platform that can be used by any type of organisation.
