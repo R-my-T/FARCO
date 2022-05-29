@@ -27,31 +27,41 @@ pandas version: 1.1.5<br/>
 8. Main.py : A python file which contains the server code.
 9. virtualenv : An anaconda python virtual environment which has all the dependencies and libraries installed.
 
-## How to run FARCO in your system>
+## How to run FARCO in your system?
 
-1. Open Anaconda Prompt (anaconda3) by searching for the same in the search bar.
-2. Type
+1. Create a folder and clone this repository.
+2. Open Anaconda Prompt (anaconda3) by searching for the same in the search bar and type
 ```bash1
 conda info
 ```
-3. Note down the first path of the virtual environments shown under the heading 'envs directories'. It should look something like this:
+3. Note down the first path from the list of the virtual environment paths shown under the heading 'envs directories'. It should look something like this:
 ```bash1
 envs directories : C:\Users\T__Ra\anaconda3\envs
 ```
-4. Copy the virtualenv folder and navigate to the path and paste it there.
-5. In the anaconda promt type
+4. Copy the virtualenv folder given in this repository and navigate to the above found file path and paste it there.
+5. In the anaconda prompt type
 ```bash1
 conda activate virtualenv
 ```
 6. The virtualenv should be running now. You can check if its running or not by looking at the starting of the line where (base) would have turned into (virtualenv). 
+![conda activate](https://user-images.githubusercontent.com/88109466/170859448-1e34c0ca-16f0-4ae3-ab33-9499477347ba.png)
 
 7. Now that you have ensured that the provided virtaulenv is running navigate to the folder where this repository is stored and type:
 ```bash1
 python Main.py
 ```
 8. The python program will execute and provide you with the url for the local host which you would have to copy and paste in a web browser to see Farco! 
+![output](https://user-images.githubusercontent.com/88109466/170859486-1d7461d3-32a7-4b7a-b15f-d0bffc71d45c.png)
 
 Note: Kindly use **only anaconda prompt to activate this virtual environtment** to avoid any unexpected errors. If there are any errors such as a package missing etc., use pip install <package name> to fix it. If you wish to use a different virtual environment kindly make sure all the above mentioned requirements are installed in it.  
+##Tech stack used
+ ![html](https://user-images.githubusercontent.com/88109466/170859538-5f48d939-75f7-4c94-9166-17a0b0f6c762.png)
+![java script](https://user-images.githubusercontent.com/88109466/170859539-c6bd9c04-90e7-4afa-8475-6dbcc4a39cb3.png)
+![opencv](https://user-images.githubusercontent.com/88109466/170859542-08b651b0-a54f-4561-abb7-70dd76d955e4.png)
+![python](https://user-images.githubusercontent.com/88109466/170859545-9de63948-80ef-4b85-a27e-a9b8c2f9ea6e.png)
+![sqlite](https://user-images.githubusercontent.com/88109466/170859546-c2548c59-f650-473d-987f-b85fbe2252dd.png)
+![css](https://user-images.githubusercontent.com/88109466/170859547-beb5515f-cdf7-4c9d-bda9-9509aa541107.png)
+![flask_icon](https://user-images.githubusercontent.com/88109466/170859548-affe65a1-76b9-4aab-b1b4-42bd58d085f5.png)
 
 ## Features
 -  Extremely flexible and versatile platform that can be used by any type of organisation.
