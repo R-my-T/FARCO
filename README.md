@@ -40,7 +40,7 @@ python Main.py
 _Note: Kindly use **only anaconda prompt to activate this virtual environtment** to avoid any unexpected errors. If there are any errors such as a package missing etc., use conda install package-name to fix it._
 
 ## Project video demo link
-https://youtu.be/pkyXKNg03T0
+https://www.youtube.com/watch?v=VL0ahE0LegY
 
 ## Tech stack used
 <p align="left">
