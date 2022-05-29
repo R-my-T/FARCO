@@ -1,9 +1,10 @@
 # FARCO - An attendance system using facial recognition
 
 Farco which stands for **FA**cial **R**e**CO**gnition is a web application that runs on any computer with a webcam and helps organisations manage the attendance of their employees/students/workers etc in an easier and more efficient way! Register your organisation and let FARCO take care of all the hard work for you.
+conda 4.10.3<br/>![farco1](https://user-images.githubusercontent.com/88109466/170859242-3ccc6f0b-5363-46e4-a5f8-2863cd5f3c15.png)
 
 ## Requirments
-conda 4.10.3<br/>
+
 Python 3.6.13 :: Anaconda, Inc.<br/>
 cmake version 3.22.1<br/>
 dlib version: 19.22.0<br/>
