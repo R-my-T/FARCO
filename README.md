@@ -26,6 +26,7 @@ pandas version: 1.1.5<br/>
 7. **attendance.db** : The database where all the user informations are stored.
 8. **Main.py** : A python file which contains the server code.
 9. **virtualenv** : An anaconda python virtual environment which has all the dependencies and libraries installed.
+10. **Farco - MS Engage 2022.pdf** : pdf file of the presentation explaining the project. 
 
 ## How to run FARCO in your system?
 
