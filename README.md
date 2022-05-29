@@ -13,7 +13,7 @@ Farco which stands for **FA**cial **R**e**CO**gnition is a web application that 
 6. **templates** : A folder which contains all the html pages that flask renders.
 7. **attendance.db** : The database where all the user informations are stored.
 8. **Main.py** : A python file which contains the server code.
-9. **requirements.txt** : Text file containing all the packages that needs to be installed using conda. 
+9. **farco_venvironment.yml** : File that allows you to install the conda virtual environment containing all the required dependencies.
 10. **Farco - MS Engage 2022.pdf** : pdf file of the presentation explaining the project. 
 
 ## How to run FARCO in your system?
@@ -38,6 +38,8 @@ python Main.py
 ![output](https://user-images.githubusercontent.com/88109466/170859486-1d7461d3-32a7-4b7a-b15f-d0bffc71d45c.png)<br/>
 
 _Note: Kindly use **only anaconda prompt to activate this virtual environtment** to avoid any unexpected errors. If there are any errors such as a package missing etc., use conda install package-name to fix it._
+
+## Project video demo link
 
 ## Tech stack used
 <p align="left">
