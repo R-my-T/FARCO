@@ -5,7 +5,7 @@ Farco which stands for **FA**cial **R**e**CO**gnition is a web application that 
 
 ## What does this repository contain?
 
-1. **CSV_Input_files** : A folder where farco saves the csv files and reads from it. It also deletes the csv file after reading.
+1. **CSV_Input_files** : A folder where farco saves the csv files and reads from it. It also deletes the csv file after reading. (currently contains a dummy file for uploading purpose)
 2. **Face_Imgs** : A folder where all the input images given by the user will be stored.
 3. **flask_session** : A folder required by flask sessions to run and manage the app's sessions.
 4. **Sample_Inputs** : A folder which you can utilise to check out the functionalities of FARCO. It contains the images and the csv file that you can upload to Farco and also has test images that you can test the attendance system with stored in the folder 'Test_Imgs'.
