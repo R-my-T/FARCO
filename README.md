@@ -50,18 +50,12 @@ conda activate virtualenv
 ```bash1
 python Main.py
 ```
-8. The python program will execute and provide you with the url for the local host which you would have to copy and paste in a web browser to see Farco!<br/> 
+8. The python program will execute and provide you with the url for the local host which you would have to copy and paste in a web browser to see Farco up and running!<br/> 
 ![output](https://user-images.githubusercontent.com/88109466/170859486-1d7461d3-32a7-4b7a-b15f-d0bffc71d45c.png)<br/>
 
-Note: Kindly use **only anaconda prompt to activate this virtual environtment** to avoid any unexpected errors. If there are any errors such as a package missing etc., use pip install <package name> to fix it. If you wish to use a different virtual environment kindly make sure all the above mentioned requirements are installed in it.  
-##Tech stack used
- ![html](https://user-images.githubusercontent.com/88109466/170859538-5f48d939-75f7-4c94-9166-17a0b0f6c762.png)
-![java script](https://user-images.githubusercontent.com/88109466/170859539-c6bd9c04-90e7-4afa-8475-6dbcc4a39cb3.png)
-![opencv](https://user-images.githubusercontent.com/88109466/170859542-08b651b0-a54f-4561-abb7-70dd76d955e4.png)
-![python](https://user-images.githubusercontent.com/88109466/170859545-9de63948-80ef-4b85-a27e-a9b8c2f9ea6e.png)
-![sqlite](https://user-images.githubusercontent.com/88109466/170859546-c2548c59-f650-473d-987f-b85fbe2252dd.png)
-![css](https://user-images.githubusercontent.com/88109466/170859547-beb5515f-cdf7-4c9d-bda9-9509aa541107.png)
-![flask_icon](https://user-images.githubusercontent.com/88109466/170859548-affe65a1-76b9-4aab-b1b4-42bd58d085f5.png)
+_Note: Kindly use **only anaconda prompt to activate this virtual environtment** to avoid any unexpected errors. If there are any errors such as a package missing etc., use pip install package-name to fix it. If you wish to use a different virtual environment kindly make sure all the above mentioned requirements are installed in it._
+## Tech stack used
+<img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png)]" />
 
 ## Features
 -  Extremely flexible and versatile platform that can be used by any type of organisation.
