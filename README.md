@@ -1,4 +1,4 @@
-# FARCO-Facial_Recognition_Attendance_System
+# FARCO - An attendance system using facial recognition
 
 Farco which stands for **FA**cial **R**e**CO**gnition is a web application that runs on any computer with a webcam and helps organisations manage the attendance of their employees/students/workers etc in an easier and more efficient way! Register your organisation and let FARCO take care of all the hard work for you.
 
