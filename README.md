@@ -58,9 +58,16 @@ _Note: Kindly use **only anaconda prompt to activate this virtual environtment**
 <p align="left">
 <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png">&nbsp;&nbsp;
 <img height="32" width="32" src="https://i.ibb.co/bzZKwJ8/sqlite.png"> <img height="32" width="32" src="https://instructobit.com/static/posts/111/ECHUS82IWZWS55YQOLWQD8PM1NKIM5WQLPNAXF1VF3P5526CDQ.jpg" >&nbsp;&nbsp; <img height="32" width="32" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/1200px-OpenCV_Logo_with_text_svg_version.svg.png" >&nbsp;&nbsp; <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" >&nbsp;&nbsp; <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" >&nbsp;&nbsp; <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" >&nbsp;&nbsp; <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" >
-</p>
+</p><br/>
 ## Features
--  Extremely flexible and versatile platform that can be used by any type of organisation.
+- Extremely flexible and versatile platform that can be used by any type of organisation.
 - Adding information and registering is very simple and does not require user to manually enter each and every field.
-- Lets the user choose how long the attendance system should capture attendance for.
+- Gives user the freedom to choose how long the attendance system should capture attendance for.
 - Lets employees or students view their attendance record without having to create an account.
+- An easy to navigate and visually pleasing minimalistic website that can be straightforwardly understood by anyone.
+
+## Future Scope
+- Adding more functionalities such as letting the user manually enter attendance as well in case of an unexpected scenario.
+- Letting the user update people’s information. For instance if the uploaded image is not clear or is wrong then user can update that record alone.
+- Implementing a search option for the user to access information easily in case of a huge classroom or department.
+- Deploying FARCO! After adding the extra features and designing FARCO to be compatible across various platforms, It will be ready to help organisations around the world with their attendance management!
