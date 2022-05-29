@@ -59,6 +59,7 @@ _Note: Kindly use **only anaconda prompt to activate this virtual environtment**
 <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png">&nbsp;&nbsp;
 <img height="32" width="32" src="https://i.ibb.co/bzZKwJ8/sqlite.png"> <img height="32" width="32" src="https://instructobit.com/static/posts/111/ECHUS82IWZWS55YQOLWQD8PM1NKIM5WQLPNAXF1VF3P5526CDQ.jpg" >&nbsp;&nbsp; <img height="32" width="32" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/OpenCV_Logo_with_text_svg_version.svg/1200px-OpenCV_Logo_with_text_svg_version.svg.png" >&nbsp;&nbsp; <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" >&nbsp;&nbsp; <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" >&nbsp;&nbsp; <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/bootstrap/bootstrap.png" >&nbsp;&nbsp; <img height="32" width="32" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" >
 </p><br/>
+
 ## Features
 - Extremely flexible and versatile platform that can be used by any type of organisation.
 - Adding information and registering is very simple and does not require user to manually enter each and every field.
