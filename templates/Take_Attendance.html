@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/Home_Page_Style.css') }}" />
+        <link href="https://fonts.googleapis.com/css?family=Encode Sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Zen Maru Gothic" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <div class="bg-text">
+            <h1 style="text-align:center; font-size: 25px;">Taking Attendance</h1>
+            <h3 style="text-align: center;font-size: 20px;">Kindly wait for the camera to turn on. Show your face to the webcamera and stay still until your face is recognised. <br>Timer:
+                <div id="countdown"></div>
+            </h3>
+            <img src="{{ url_for('Attendance') }}" width="50%" height="50%" class="center" />
+            <br>
+            <center>
+                <P style="text-align: center;">Lock attendance only after the time is up!</P>
+                <a href="{{ url_for ('List_Depts') }}" style="text-decoration:none;">
+                    <button type="submit" name="lock" id="submit" value="1"> Lock Attendance <i class="fa fa-lock" style="color:rgb(0, 0, 0)"></i></button>
+                </a>
+            </center>
+        </div>
+
+        <script>
+            function countdown(elementName, minutes, seconds) {
+                var element, endTime, hours, mins, msLeft, time;
+                function twoDigits(n) {
+                    return (n <= 9 ? "0" + n : n);
+                }
+                function updateTimer() {
+                    msLeft = endTime - (+new Date);
+                    if (msLeft < 1000) {
+                        element.innerHTML = "Time is up!";
+                    } else {
+                        time = new Date(msLeft);
+                        hours = time.getUTCHours();
+                        mins = time.getUTCMinutes();
+                        element.innerHTML = (hours ? hours + ':' + twoDigits(mins) : mins) + ':' + twoDigits(time.getUTCSeconds());
+                        setTimeout(updateTimer, time.getUTCMilliseconds() + 500);
+                    }
+                }
+                element = document.getElementById(elementName);
+                endTime = (+new Date) + 1000 * (60 * minutes + seconds) + 500;
+                updateTimer();
+            }
+            countdown("countdown", '{{timer}}', 30);
+        </script>
+        
+    </body>
+
+</html>

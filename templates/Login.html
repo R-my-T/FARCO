@@ -1,0 +1,65 @@
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/Login_Style.css') }}" />
+        <link href="https://fonts.googleapis.com/css?family=Encode Sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Zen Maru Gothic" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{url_for('Home_Page')}}" style="color: #fbfeff">FARCO</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{url_for('Log_In')}}">Log In</a></li>
+                    <li><a href="{{url_for('View_Attendance')}}">View Attendance</a></li>
+                    <li><a href="{{url_for('About_Me')}}">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <img id="responsiveImg" src="{{url_for('static', filename='images/login.png')}}" alt="Freepik Stock Image" width="40%" height="70%" />
+        <div id='bg-text'>
+            <h1 class="animate__animated animate__bounceIn" style="font-size: 45px; color: #070d37;text-align: center;"> Welcome Back! </h1><br>
+            <h4 style="font-size: 20px; color: #b52b39;text-align: left;">
+                {% with messages = get_flashed_messages() %} {% if messages %} {% for message in messages %} {{ message }} {% endfor %} {% endif %} {% endwith %}</h4>
+            <h4 style="font-size: 25px; color: #070d37;text-align: left;">
+                Name <br>
+                <form action="{{ url_for ('Log_In') }}" method="POST">
+                    <input autocomplete="Off" type="text" name="name" style="color: black; height:32; font-size: 22px;width: 100%;" /><br /><br /> Password <br>
+                    <input type="password" name="password" id="hide" style="color: black; font-size: 22px;width: 100%;" /><br /><br />
+                    <p style="font-size: 18px;color:#070d37"><input type="checkbox" onclick="myFunction()"> Show password </p>
+                    <input type="submit" name="submit" id="submit" value="Log In" />
+                </form>
+            </h4>
+        </div>
+        <div class="bottom-right">
+            <h6 id="responsiveTxt" style=" font-size: 12px;">
+                <a href="https://www.freepik.com/vectors/login-illustration" style="color: #070d37;">Login illustration vector created by storyset - www.freepik.com</a>
+            </h6>
+        </div>
+        <br><br><br>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("hide");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
+
+    </body>
+
+</html>

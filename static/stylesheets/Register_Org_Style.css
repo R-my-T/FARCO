@@ -1,0 +1,153 @@
+div.b {
+    line-height: 2;
+}
+
+.navbar {
+    background-color: #1A2E35;
+    font-family: 'Oswald';
+    font-size: 22px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #fbfeff;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    color: #c1bfbf;
+}
+
+body {
+    background-color: #f39e95;
+    font-family: 'Encode Sans';
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Oswald';
+    font-size: 22px;
+}
+
+h4,
+h5 {
+    font-family: 'Zen Maru Gothic';
+    font-size: 22px;
+}
+
+#bg-text {
+    position: absolute;
+    top: 30%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 45%;
+    height: 40%;
+    padding: 20px;
+}
+
+#submit {
+    border: 2px solid #2B3270;
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #2B3270;
+}
+
+#submit:hover {
+    background-color: #004B84;
+    color: white;
+}
+
+#form-submit {
+    border: 2px solid #131634;
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #2B3270;
+}
+
+#form-submit:hover {
+    background-color: #f0f0f0;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: #fbfeff;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #2B3270;
+}
+
+.button1:hover {
+    background-color: #004B84;
+    color: white;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+}
+
+@media (max-width: 800px) {
+    img#responsiveImg {
+        display: none;
+    }
+    h6#responsiveTxt {
+        display: none;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #bg-text {
+        top: 45%;
+        left: 50%;
+        text-align: center;
+    }
+}
+
+#overlay-container {
+    position: fixed;
+    width: 35%;
+    height: 70%;
+    top: 15%;
+    left: 5%;
+    padding: 15px;
+    color: #fbfeff;
+    text-align: left;
+    background-color: rgba(0, 75, 132);
+}

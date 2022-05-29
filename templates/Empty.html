@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/Home_Page_Style.css') }}" />
+        <link href="https://fonts.googleapis.com/css?family=Encode Sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Zen Maru Gothic" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{url_for('Home_Page')}}" style="color: #fbfeff">FARCO</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{url_for('Log_Out')}}">Log Out</a></li>
+                    <li><a href="{{url_for('View_Attendance')}}">View Attendance</a></li>
+                    <li><a href="{{url_for('About_Me')}}">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <center>
+            <br /><br />
+            <img id="responsiveImg" src="{{url_for('static', filename='images/empty2.png')}}" alt="Freepik Stock Image" width="500px" height="500px" />
+            <h4 style="font-size: 25px; color: #1a2e35; text-align: center">
+                Uh-oh looks like there are no departments registered yet.. <br />Would you like to add your departments' information?<br /><br />
+                <a href="{{url_for('Add_Dept')}}">
+                    <button class="button button1">Add</button>
+                </a>
+            </h4>
+        </center>
+        <div class="bottom-right">
+            <h6 id="responsiveTxt" style="font-size: 12px">
+                <a href="https://www.freepik.com/vectors/no-data">No data vector created by storyset - www.freepik.com</a>
+            </h6>
+        </div>
+    </body>
+    
+</html>

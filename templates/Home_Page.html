@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/Home_Page_Style.css') }}">
+        <link href='https://fonts.googleapis.com/css?family=Encode Sans' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Zen Maru Gothic' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{url_for('Home_Page')}}" style="color: #fbfeff">FARCO</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{url_for('Log_In')}}">Log In</a></li>
+                    <li><a href="{{url_for('View_Attendance')}}">View Attendance</a></li>
+                    <li><a href="{{url_for('About_Me')}}">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br /><br />
+        <img id="responsiveImg" src="{{url_for('static', filename='images/stockimage4.png')}}" alt="Freepik Stock Image" width="55%" height="90%" align="right" />
+        <div class="bottom-right">
+            <h6 id="responsiveTxt" style=" font-size: 12px;">
+                <a href='https://www.freepik.com/vectors/task-management' style="color:#1A2E35;">Task management vector created by storyset - www.freepik.com</a>
+            </h6>
+        </div>
+        <div style="padding-left:16px">
+            <div id='bg-text'>
+                <strong><h1 style="font-size: 60px; color: #1A2E35" class="animate__animated animate__bounce animate__slow"> LOOKING FOR AN EFFECTIVE WAY TO TAKE ATTENDANCE?</h1></strong><br>
+                <div class="b">
+                    <h4 style="font-size: 25px; color: #1A2E35">
+                        You have come to the right place! Farco is here to help you with tracking the attendance of your employees, students or workers. Farco tracks attendance using a face 
+                        recognition system thus replacing the traditional time consuming and boring roll calls.
+                        All you have to do is register and let Farco take care of attendance management for you! <br><br>
+                    </h4>
+                    <center>
+                        <h6 style=" font-size: 15px; color: #1A2E35">New here?<br> Get started by registering your organization!</h6>
+                        <a href="{{url_for('Register_Org')}}" style="text-decoration: none;">
+                            <button class="cssbuttons-io-button"> Register
+                                <div class="icon">
+                                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
+                                </div>
+                            </button>
+                        </a>
+                    </center>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+    </body>
+
+</html>

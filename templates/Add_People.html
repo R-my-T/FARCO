@@ -1,0 +1,90 @@
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/Home_Page_Style.css') }}" />
+        <link href="https://fonts.googleapis.com/css?family=Encode Sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Zen Maru Gothic" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{url_for('Home_Page')}}" style="color: #fbfeff">FARCO</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{url_for('Log_Out')}}">Log Out</a></li>
+                    <li><a href="{{url_for('View_Attendance')}}">View Attendance</a></li>
+                    <li><a href="{{url_for('About_Me')}}">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br /><br /><br /><br />
+        <div id="center2" style="text-align: center">
+            <h1 style="text-align: center; font-size: 30px">
+                Instructions to upload the department's people's information:<br /><br />
+            </h1>
+            <h4 style="font-size: 22px; color: #1a2e35; text-align: left">
+                <ol>
+                    <li>Create a csv file in the format: Unique_ID*, Name_of_Person, Contact_email</li><br />
+                    <li>Upload the csv file</li><br />
+                    <li>Upload the images by choosing them in the same order as the csv file i.e, first person's image should be selected first and so on.</li><br />
+                    <li>Kindly ensure that the images are in jepg,jpg or png format.</li><br />
+                    <li>Click on submit.</li>
+                </ol>
+                <br />
+                <p style="font-size: 15px">
+                    * Unique ID should be a distinctive ID that the person is recognised with. For instance: registration number in case of students, employee ID in case of employees etc.
+                </p>
+                <br />
+                <form method="POST" action="" enctype="multipart/form-data" class="form-inline">
+                    <div class="form-group">
+                        <label>Choose CSV file:</label>
+                        <input type="file" name="CSVfile" class="form-control" multiple />
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <label>Choose Images:</label>
+                        <input type="file" name="files[]" id="fileInput" class="form-control" multiple />
+                    </div>
+                    <br /><br /><br />
+                    <input type="submit" id="submit" value="Submit" style="width: 100%; text-align: center" />
+                </form>
+            </h4>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                $("#fileInput").change(function() {
+                    var fileLength = this.files.length;
+                    var match = ["image/jpeg", "image/png", "image/jpg"];
+                    var i;
+                    for (i = 0; i < fileLength; i++) {
+                        var file = this.files[i];
+                        var imagefile = file.type;
+                        if (!(
+                                imagefile == match[0] ||
+                                imagefile == match[1] ||
+                                imagefile == match[2] ||
+                                imagefile == match[3]
+                            )) {
+                            alert("Please select a valid image file (JPEG/JPG/PNG).");
+                            $("#fileInput").val("");
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+        
+    </body>
+
+</html>

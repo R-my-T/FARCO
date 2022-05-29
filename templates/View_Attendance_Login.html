@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/Home_Page_Style.css') }}" />
+        <link href="https://fonts.googleapis.com/css?family=Encode Sans" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Zen Maru Gothic" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="{{url_for('Home_Page')}}" style="color: #fbfeff">FARCO</a>
+                </div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="{{url_for('Log_In')}}">Log In</a></li>
+                    <li><a href="{{url_for('View_Attendance')}}">View Attendance</a></li>
+                    <li><a href="{{url_for('About_Me')}}">About Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br /><br />
+        <div class="bg-text" style="text-align: center">
+            <img id="responsiveImg" src="{{url_for('static', filename='images/user_view.png')}}" alt="Freepik Stock Image" width="45%" height="50%" />
+            <div class="bottom-right">
+                <h6 id="responsiveTxt" style="font-size: 12px">
+                    <a href='https://www.freepik.com/vectors/calendar-cartoon' style="color:black ;">Calendar cartoon vector created by pch.vector - www.freepik.com</a> >
+                </h6>
+            </div>
+            <div class="bg-text" style="text-align: center">
+                <h1 style="font-size: 30px; color: #1a2e35">
+                    View your attendance details<br /><br />
+                </h1>
+                <h4 style="font-size: 25px; color: #1a2e35">
+                    <form action="{{ url_for ('View_Attendance') }}" method="POST">
+                        Organisation Name&nbsp
+                        <input type="text" name="Org_Name" style="color: black; font-size: 22px" /><br /><br /> Department Name&nbsp
+                        <input type="text" name="Dept_Name" style="color: black; font-size: 22px" /><br /><br /> Register Number&nbsp
+                        <input type="text" name="Register_No" style="color: black; font-size: 22px" /><br /><br />
+                        <input type="submit" name="submit" id="submit" value="View" />
+                    </form>
+                </h4>
+            </div>
+        </div>
+    </body>
+
+</html>

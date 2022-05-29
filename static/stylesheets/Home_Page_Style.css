@@ -1,0 +1,297 @@
+div.b {
+    line-height: 2;
+}
+
+.navbar {
+    background-color: #1A2E35;
+    font-family: 'Oswald';
+    font-size: 22px;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: #fbfeff;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    color: #c1bfbf;
+}
+
+body {
+    background-color: #f39e95;
+    font-family: 'Encode Sans';
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Oswald';
+    font-size: 22px;
+}
+
+h4,
+h5 {
+    font-family: 'Zen Maru Gothic';
+    font-size: 22px;
+}
+
+#bg-text {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    height: 80%;
+    padding: 20px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #2B3270;
+}
+
+.button1:hover {
+    background-color: #004B84;
+    color: white;
+}
+
+a:hover {
+    color: #fbfeff;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+}
+
+@media (max-width: 800px) {
+    img#responsiveImg {
+        display: none;
+    }
+    h6#responsiveTxt {
+        display: none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #bg-text {
+        top: 60%;
+        left: 50%;
+        text-align: center;
+    }
+}
+
+#mySidenav a {
+    position: absolute;
+    left: -50px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fbfeff;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#add {
+    top: 100px;
+    background-color: #006d77;
+}
+
+#update {
+    top: 200;
+    background-color: #006d77;
+}
+
+#delete {
+    top: 300px;
+    background-color: #006d77;
+}
+
+#submit {
+    border: 2px solid #2B3270;
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 2px solid #2B3270;
+}
+
+#submit:hover {
+    background-color: #004B84;
+    color: white;
+}
+
+.cssbuttons-io-button {
+    background: #004B84;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #033c68;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+}
+
+.cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #033c68;
+    right: 0.3em;
+    transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #033c68;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+}
+
+.main-container {
+    padding: 30px;
+}
+
+.button_slide {
+    /*color: #FFF;*/
+    /*border: 2px solid #f9dcc4;*/
+    background-color: #F1CED4;
+    border-radius: 0px;
+    padding: 10px 10px;
+    display: inline-block;
+    /*font-family: "Lucida Console", Monaco, monospace;*/
+    font-size: 18px;
+    /*letter-spacing: 1px;*/
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #E8B4B8;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+    font-family: 'Zen Maru Gothic';
+    margin: 10px;
+    height: 90%;
+    width: 80%;
+}
+
+.slide_down:hover {
+    box-shadow: inset 0 450px 0 0 #E8B4B8;
+    color: #fbfeff;
+}
+
+#outer {
+    width: 364px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    left: 20%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#center1 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    height: 80%;
+    padding: 20px;
+}
+
+#center2 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    height: 80%;
+    padding: 20px;
+}
+
+#img-profile {
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+}
+
+#about-me {
+    position: absolute;
+    top: 55%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 20px;
+}
